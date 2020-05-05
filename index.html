@@ -328,31 +328,17 @@
       
         
           
-            <p><strong>模块化</strong> 就是把单独的一个功能封装到一个模块（文件）中，模块之间相互隔离，但是可以通过特定的借口公开内部成员，也可以依赖别的模块。</p>
-<h1 id="1-浏览器端模块化规范"><a href="#1-浏览器端模块化规范" class="headerlink" title="1.浏览器端模块化规范"></a>1.浏览器端模块化规范</h1><h2 id="1-1-AMD"><a href="#1-1-AMD" class="headerlink" title="1.1 AMD"></a>1.1 AMD</h2><p><a href="http://www.requirejs.cn" target="_blank" rel="noopener" title="Require.js">Require.js</a></p>
-<h2 id="1-2-CMD"><a href="#1-2-CMD" class="headerlink" title="1.2 CMD"></a>1.2 CMD</h2><p><a href="https://seajs.github.io/seajs/docs" target="_blank" rel="noopener" title="Sea.js">Sea.js</a></p>
-<h1 id="2-服务器端模块化规范"><a href="#2-服务器端模块化规范" class="headerlink" title="2.服务器端模块化规范"></a>2.服务器端模块化规范</h1><h2 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h2><ul>
-<li>模块分为 <strong>单文件模块</strong> 与 <strong>包</strong></li>
-<li>模块成员导出： <strong>module.exports</strong> 和 <strong>exports</strong></li>
-<li>模块成员导入： <strong>require(‘模块标识符’)</strong></li>
-</ul>
-<h1 id="3-ES6模块化（推荐）"><a href="#3-ES6模块化（推荐）" class="headerlink" title="3.ES6模块化（推荐）"></a>3.ES6模块化（推荐）</h1><ul>
-<li>每个 js 文件都是一个独立的模块</li>
-<li><strong>导入模块成员</strong> 使用 <strong>import</strong> 关键字</li>
-<li><strong>暴露模块成员</strong> 使用 <strong>export</strong> 关键字</li>
-</ul>
-<h2 id="在Node-js中通过babel体验ES6模块化"><a href="#在Node-js中通过babel体验ES6模块化" class="headerlink" title="在Node.js中通过babel体验ES6模块化"></a>在Node.js中通过<strong>babel</strong>体验ES6模块化</h2><ol>
-<li>安装babel相关依赖包<br><code>npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/node</code></li>
-<li>安装babel相关第三方插件<br><code>npm install --save @babel/polyfill</code></li>
-<li>在项目根目录中创建babel配置文件 <strong>babel.config.js</strong></li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> presets = [</span><br><span class="line">	[<span class="string">"@babel/env"</span>, &#123;</span><br><span class="line">		<span class="comment">//转换后的代码所支持的浏览器</span></span><br><span class="line">		targets: &#123;</span><br><span class="line">			edge: <span class="string">"17"</span>,</span><br><span class="line">			firefox: <span class="string">"60"</span>,</span><br><span class="line">			chrome: <span class="string">"67"</span>,</span><br><span class="line">			safari: <span class="string">"11"</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;]</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>运行babel<br><code>npx babel-node index.js</code></li>
-</ol>
-
-          
+          模块化 就是把单独的一个功能封装到一个模块（文件）中，模块之间相互隔离，但是可以通过特定的借口公开内部成员，也可以依赖别的模块。
+1.浏览器端模块化规范1.1 AMDRequire.js
+1.2 CM
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/05/05/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%9B%B8%E5%85%B3%E8%A7%84%E8%8C%83/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -501,13 +487,20 @@
       
         
           
-            <p>摸爬滚打算是搭建好了，记录几个需要注意的点</p>
-<h1 id="1-本地浏览博客"><a href="#1-本地浏览博客" class="headerlink" title="1.本地浏览博客"></a>1.本地浏览博客</h1><p>需要分别输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+          摸爬滚打算是搭建好了，记录几个需要注意的点
+1.本地浏览博客需要分别输入以下命令：
+12hexo ghexo s
 
-<p>更多hexo常用指令: <a href="https://segmentfault.com/a/1190000002632530" target="_blank" rel="noopener">Writing</a></p>
-<h1 id="2-发布到Github"><a href="#2-发布到Github" class="headerlink" title="2.发布到Github"></a>2.发布到Github</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-          
+更多hexo常用指令: Writing
+2.发布到Github1$ hexo cle
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/05/05/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
